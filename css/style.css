@@ -71,13 +71,87 @@
     animation: scroll 0.5s infinite;
     transform: translatex(-50%);
 }
-@keyframes scroll{
+/* @keyframes scroll{
     0%{top: 10%;}
     25%{top: 14%;}
     50%{top: 15%;}
     75%{top: 16%;}
     100%{top: 17%;}
+} */
+
+.home{
+    height: 100vh;
 }
+.carousel-inner1{
+    height: 100%;
+}
+.leftPart{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.carousel-control-next, .carousel-control-prev{
+
+    position: unset;
+    opacity: 1;
+    width: unset;
+    border: 1px solid white;
+
+}
+.btnContent{
+    position: relative;
+    padding: 15px;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    background-color: white;
+    transition: 0.5s all;
+    z-index: -1;
+}
+.carousel-control-next:hover .layer, .carousel-control-prev:hover .layer{
+
+    right: 0;
+
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-image: unset;
+}
+.carousel-control-next i, .carousel-control-prev i{
+    z-index: 3;
+    transition: 0.5s all;
+}
+.carousel-control-next:hover i, .carousel-control-prev:hover i{
+    color: red;
+}
+.text{
+    font-size: 80px;
+    position: absolute;
+    left: 130%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    transition: 2s all;
+    width: 50%;
+}
+.carousel-item.active .text{
+
+    left: 50%;
+
+}
+.carousel-item{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
 /*********************/
 .about{
     margin-top: 80px;
@@ -101,7 +175,7 @@
     transition: all 0.5s;
 }
 .about:hover .border{
-    width: 60px;
+    width: 150px;
 }
 #about p{
     font-size: 18px;
@@ -138,28 +212,35 @@
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: all 1s;
 }
 .work-item:hover .work-layer{
     opacity: 1;
+    transition: all 1s;
 }
 .work-details{
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .work-details i{
     padding: 10px;
+    transition: all 1s;
+
+}
+.work-details i:hover{
+    color: #000;
+    
 }
 .work-item:hover img{
     transform:scale(1.1) ;
 }
 .work-item img{
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .team-cap{
     margin-top: 20px !important;
 }
 .team-cap h5{
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .all:hover .team-cap h5{
     color: #F25454 !important;
@@ -167,10 +248,11 @@
 .buttonn button{
     background-color:#F25454 ;
     border-color: #F25454;
+    transition: all 1s;
+
 }
 .buttonn button:hover{
-   background-color: rgba(242, 84, 84, 0.85) !important;
-    border-color:#F25454 ;
+   background-color: #000;
 }
 .textt h3{
     font-weight: 400;
@@ -178,7 +260,8 @@
     color: #282828;;
 }
 .caption1{
-    margin-top: 100px !important;
+    margin-top: 100px ;
+    margin-bottom: 100px ;
     text-align: center;
 }
 /**********************/
@@ -189,36 +272,23 @@
 .section1 .section1-cap i{
     color: #f25454;
     font-size: 27px;
+    transition: all 1s;
+    
 }
 .section1:hover .section1-cap2 h3{
     color: #F25454;
+    transition: all 1s;
 }
 .section1-cap2 h3{
     transition: all 0.5s;
     font-size: 17px !important;
     font-weight: 600;
     font-family:  "Poppins", sans-serif !important;
+    transition: all 1s;
 }
 /**********************/
 
-.blog-img .img1{
-    width: 120px;
-}
-.blog-img .img1 img{
-    width: 100%;
-}
-.blog-img .img2{
-    width: 120px;
-}
-.blog-img .img2 img{
-    width: 100%;
-}
-.blog-img .img3{
-    width: 120px;
-}
-.blog-img .img3 img{
-    width: 100%;
-}
+
 /* .carousel-item img{
     width: 64px;
 }
@@ -230,8 +300,7 @@
 } */
 /*********************************/
 .all-content{
-    margin-top: 200px !important;
-    padding-top:10px ;
+    
     padding-bottom: 40px;
     background-color: #FAFAFA;
 }
@@ -291,13 +360,13 @@
     transform: translatex(-50%);
     background-color:rgba(242, 84, 84, 0.5);
     padding: 10px;
-    transition: all 0.5;
+    transition: all 1s;
 }
 .up i{
     font-size: 25px;
 }
 .up:hover{
-    background-color: #F25454;
+    background-color: #000;
 }
 .part1 h5{
     color: #fff;
@@ -390,3 +459,57 @@ i:hover {
 .parggraf span:hover{
    color: #f25454;
 } 
+
+.indicator-item img{
+    width: 110px !important;
+    height: 110px !important;
+}
+
+.indicator-item img.active{
+    width: 140px !important;
+    height: 140px !important;
+}
+
+.single-box p{
+    width: 400px;
+    margin: auto;
+}
+
+.client-info h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.client-info{
+    display: none;
+}
+
+.indicator-item img.active:first-of-type + div{
+    display: block;
+}
+
+/*  */
+.color-box{
+    position: fixed;
+    top: 150px;
+    left: 0;
+    display: flex;
+    z-index: 2;
+}
+.color-box .color-option{
+    background-color: gray;
+    padding: 10px;
+    border: 3px solid #fed136;
+}
+.color-box i{
+    background-color: #fed136;
+    height: fit-content;
+    padding: 10px;
+}
+.color-option li{
+    background-color: teal;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}

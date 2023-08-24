@@ -3,12 +3,24 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
+
+      <div class="color-box">
+        <div class="color-option">
+            <h3>Colors:</h3>
+            <ul class="list-unstyled">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <i class="fa fa-cog"></i>
+
+    </div>
       <section id="Home">
-        <nav class="navbar pt-3 navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <nav class="navbar  navbar-expand-lg navbar-light bg-dark fixed-top">
                 <div class="container">
                   <a class="navbar-brand" href="#">
                       <img src="images/images/logo-white.png" class="w-100" alt="logo">
@@ -28,13 +40,10 @@
                         <a class="nav-link" href="#Team">Team</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link" href="#Services">Services</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#Blog">Blog</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#Content">Content</a>
@@ -50,48 +59,61 @@
                 </div>
             </nav>
 
-            <div class="setting position-fixed  rounded-end">
-              <i class="fas fa-cogs text-white"></i>
-            </div>
-            <div class="scroll position-absolute border border-2 border-white rounded-pill">
 
-            </div>
-
-        <div  id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          
-          <div class="carousel-inner">
-            <div class="carousel-item active position-relative">
-              <img src="images/images/slideshow-1.jpg" class="d-block w-100 h-100" alt="photo">
-              <div class="caption position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
-                <h1 class="animate fadeInRight lowercase" style="visibility: visible; animation-name: fadeInRight;">We build<br>great brands.</h1>
+            <div class="home">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner carousel-inner1">
+                      <div class="carousel-item active">
+                          <div class="content text-center position-relative">
+      
+                              <img src="images/images/slideshow-1.jpg" class="d-block w-100" alt="slideshow1">
+                              <h3 class="text">Advanced in digital works.</h3>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="content text-center position-relative">
+      
+                              <img src="images/images/slideshow-2.jpg" class="d-block w-100" alt="slideshow1">
+                              <h3 class="text">Advanced in digital works.</h3>
+      
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="content text-center position-relative">
+      
+                              <img src="images/images/slideshow-3.jpg" class="d-block w-100" alt="slideshow1">
+                              <h3 class="text">Advanced in digital works.</h3>
+      
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="leftPart">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                          data-bs-slide="prev">
+                          <div class="btnContent">
+                              <span class="carousel-control-prev-icon" aria-hidden="true">
+                                  <i class="fas fa-chevron-left"></i>
+                              </span>
+                              <span class="visually-hidden">Previous</span>
+                              <div class="layer"></div>
+                          </div>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                          data-bs-slide="next">
+                          <div class="btnContent">
+                              <span class="carousel-control-next-icon " aria-hidden="true">
+                                  <i class="fas fa-chevron-right position-relative"></i>
+                              </span>
+                              <span class="visually-hidden">Next</span>
+                              <div class="layer"></div>
+                          </div>
+                      </button>
+                  </div>
               </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="images/images/slideshow-2.jpg" class="d-block w-100 h-100" alt="photo">
-              <div class="caption position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
-                <h1 class="animate fadeInRight lowercase" style="visibility: visible; animation-name: fadeInRight;">Focused<br> on strategy.</h1>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/images/slideshow-3.jpg" class="d-block w-100 h-100" alt="photo">
-              <div class="caption position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
-                <h1 class="animate fadeInRight lowercase" style="visibility: visible; animation-name: fadeInRight;">Advanced in <br>digital works.</h1>
-              </div>
-            </div>
-            
-          </div> 
-          <div class="button1">
-            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="bebo carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="bebo visually-hidden">Previous</span>
-
-              <span class="hamoo carousel-control-next-icon " aria-hidden="true"></span>
-              <span class=" hamoo visually-hidden">Next</span>
-            </button>
           </div>
-        </div>
       </section>
+
       <section id="About">
         <div class="about position-relative col-md-12">
           <h1>A</h1>
@@ -100,14 +122,14 @@
         <p class="w-50 m-auto text-center my-5 text-muted">Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Pellentesque elementum libero enim.</p>
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-6">
               <div class="about-cap ">
                 <p>Pellentesque vel elit egestas, pretium est ac, convallis orci. Vivamus sem nisl, tristique vel fringilla vitae, efficitur at eros. Duis aliquet aliquet pharetra. Suspendisse bibendum erat quis gravida pulvinar. Phasellus vel eros porta, blandit dui ac, viverra felis.</p>
                 <p>Nunc placerat iaculis pulvinar. Nullam auctor mauris sed urna posuere volutpat. Mauris ut dui sit amet elit fermentum fermentum. Fusce tincidunt diam at bibendum porta.</p>
                 <p>Aliquam nunc felis, sagittis eu purus non, interdum vehicula urna. Vivamus congue diam sapien, eu pellentesque ipsum ultricies quis.</p>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-md-6">
 
               <div class="skill">
                 <p class=" p1 text-start"> Branding <span class="float-end">80%</span></p>
@@ -142,8 +164,8 @@
             </div>
           </div>
         </div>
-      
       </section>
+
       <section id="Team">
         <div class="about position-relative col-md-12">
           <h1>O</h1>
@@ -235,13 +257,16 @@
             </div>
             <div class="col-md-6">
               <div class="buttonn">
-                <button type="button" class="btn btn-outline-success py-2 px-4 text-white"><a href="#Content"></a> Contact Us</button>
+                <a href="#Content">
+                  <button type="button" class="btn btn-outline-success py-2 px-4 text-white"> Contact Us</button>
+
+                </a>
               </div>
             </div>
           </div>
         </div>
-
       </section>
+      
       <section id="Services" class="background">
         <div class="about position-relative col-md-12">
           <h1>S</h1>
@@ -285,9 +310,6 @@
                 </div>
               </div>
             </div>
-
-
-
           </div>
 
           <div class="row my-3">
@@ -366,67 +388,109 @@
             </div>
           </div>
         </div>
-
-
-
       </section>
-     <!--  <section id="Blog">
-        <div class="about position-relative col-md-12">
-          <h1>C</h1>
-          <h3 class="position-absolute w-100 h-100"> Client Reviews <div class="border"></div></h3>
-        </div>
-        <p class="w-50 m-auto text-center my-5 text-muted">Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum sollicitudin risus, id ultricies arcu neque eget velit</p>
-        
-         <div id="carouselExampleIndicators" class="carousel slide w-75 m-auto" data-bs-ride="carousel">
-       
-          <div class="carousel-inner  h-50">
-            <div class="carousel-item active text-center ">
-              <img src="images/images/client-1.png" class=" rounded-circle" alt="photo">
-              <div class="carousel-caption position-relative">
-                <h5 class="text-dark">Martin Jack</h5>
-                <span class="text-muted">From Hooli</span>
-                <p class="lead text-muted"> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus. </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/images/client-2.png" class=" rounded-circle" alt="photo">
-              <div class="carousel-caption position-relative">
-                <h5 class="text-dark">Martin Jack</h5>
-                <span class="text-muted">From Hooli</span>
-                <p class="lead text-muted"> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus. </p>
-              </div>
-            </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/images/client-3.png" class=" rounded-circle" alt="photo">
-              <div class="carousel-caption position-relative">
-                <h5 class="text-dark">Martin Jack</h5>
-                <span class="text-muted">From Hooli</span>
-                <p class="lead text-muted"> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus. </p>
-              </div>
-            </div>
-            
-            </div> 
-          </div>
-          <div class="carousel-indicators position-static">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-              
-            </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
 
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+      <section id="blog" class="mt-5 mb-5">
+        <div class="container text-center">
+            <div class="section-title text-center">
+                <h2>Client Reviews</h2>
+                <p class="w-50 m-auto">
+                    Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida
+                    faucibus, elit ipsum sollicitudin risus, id ultricies arcu neque eget velit.
+                </p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators position-static d-flex align-items-center">
+
+                    <div class="indicator-item">
+                        <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class=" rounded-circle" aria-current="true" aria-label="Slide 1" src="imgs/client-1.png"
+                            alt="" srcset="">
+                        <div class="client-info">
+                            <h3>Hugh Tace</h3>
+                            <span>From Capital</span>
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            class="rounded-circle" aria-current="true" aria-label="Slide 2" src="imgs/client-2.png"
+                            alt="" srcset="">
+                        <div class="client-info">
+                            <h3>Hugh Tace</h3>
+                            <span>From Capital</span>
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            class="rounded-circle active" aria-current="true" aria-label="Slide 3"
+                            src="imgs/client-3.png" alt="" srcset="">
+                        <div class="client-info">
+                            <h3>Hugh Tace</h3>
+                            <span>From Capital</span>
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            class="rounded-circle" aria-current="true" aria-label="Slide 4" src="imgs/client-4.png"
+                            alt="" srcset="">
+                        <div class="client-info">
+                            <h3>Hugh Tace</h3>
+                            <span>From Capital</span>
+                        </div>
+                    </div>
+                    <div class="indicator-item">
+                        <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            class="rounded-circle" aria-current="true" aria-label="Slide 5" src="imgs/client-5.png"
+                            alt="" srcset="">
+                        <div class="client-info">
+                            <h3>Hugh Tace</h3>
+                            <span>From Capital</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="single-box">
+                            <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla
+                                lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i
+                                    class="fas fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="single-box">
+                            <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla
+                                lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i
+                                    class="fas fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="single-box">
+                            <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla
+                                lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i
+                                    class="fas fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="single-box">
+                            <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla
+                                lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i
+                                    class="fas fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="single-box">
+                            <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla
+                                lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i
+                                    class="fas fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section> -->
+      </section>
+
 
       <section id="Content" class="all-content">
         <div class="about position-relative col-md-12">
@@ -482,24 +546,18 @@
               </form>
             </div>
           </div>
-          
-      
-          
-
-          
         </div>
 
       </section>
 
      <section id="fotter" class="background">
-
         <div class="alll">
           <div class="fotter-img position-relative">
             <img src="images/images/icon.png" alt="icon">
   
-            <div class="up position-absolute text-white rounded rounded-circle">
+            <div id="topBtn" class="up position-absolute text-white rounded rounded-circle">
               <i class="fas fa-angle-up"></i>
-          </div>
+            </div>
           </div>
           <div class="container">
             <div class="row">
@@ -555,8 +613,8 @@
             </div>
           </div>
         </div>
-
       </section> 
+
       <section id="end">
           <div class="container">
             <div class="row">
@@ -576,6 +634,11 @@
             </div>
           </div>
       </section> 
+
+      
     </body>
-    </body>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
 </html>

@@ -25,17 +25,17 @@ for(var i=0; i<bgColor.length; i++){
 
 $(".color-option li").click(function(){
     let currentBg=$(this).css("background-color");
-    $("h3,h4").css("color",currentBg)
+    $("h2,h3,h4").css("color",currentBg)
     console.log(currentBg)
   })
 
   $(".color-box i").click(function(){
    let currentWidth=$(".color-option").outerWidth()
-   if($(".color-box").css("left")=="0px"){
-        $(".color-box").animate({"left": -currentWidth},2000)
+   if($(".color-box").css("right")=="0px"){
+        $(".color-box").animate({"right": -currentWidth},2000)
    }
    else
    {
-    $(".color-box").animate({"left": 0 },2000)
+    $(".color-box").animate({"right": 0 },2000)
    }
   })

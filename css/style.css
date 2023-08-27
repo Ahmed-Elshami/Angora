@@ -24,25 +24,25 @@
 .navbar{
     border-bottom: 1px solid rgba(153, 153, 153, 0.4) !important;
 }
-.button1 .hamoo{
+/* .button1 .hamoo{
     position: absolute;
     top: 20px;
     left: 0;
     height: 100%;
-}
-.button1 .bebo{
+} */
+/* .button1 .bebo{
     position: absolute;
     top: -40px;
     left: 0;
     height: 100%;
-}
-.caption h1{
+} */
+/* .caption h1{
     font-size: 70px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
-}
-.setting{
+} */
+/* .setting{
     background-color: #2b2424;
     padding: 12px 9px;
     top: 20%;
@@ -50,16 +50,16 @@
 }
 .setting .fas{
     font-size: 16px;
-}
-.scroll{
+} */
+/* .scroll{
     width: 30px;
     height: 45px;
     bottom: 10%;
     left: 50%;
     transform: translatex(-50%);
     z-index: 3;
-}
-#home .scroll::after{
+} */
+/* #home .scroll::after{
     content:"" ;
     width:10px ;
     height:10px ;
@@ -70,7 +70,7 @@
     bottom: 7px;
     animation: scroll 0.5s infinite;
     transform: translatex(-50%);
-}
+} */
 /* @keyframes scroll{
     0%{top: 10%;}
     25%{top: 14%;}
@@ -79,12 +79,11 @@
     100%{top: 17%;}
 } */
 
-.home{
-    height: 100vh;
-}
-.carousel-inner1{
+
+/* .carousel-inner1{
     height: 100%;
-}
+} */
+
 .leftPart{
     position: absolute;
     left: 0;
@@ -128,14 +127,15 @@
     color: red;
 }
 .text{
-    font-size: 80px;
+    font-size: 60px;
     position: absolute;
     left: 130%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     color: white;
     transition: 2s all;
-    width: 50%;
+    
+
 }
 .carousel-item.active .text{
 
@@ -154,7 +154,7 @@
 
 /*********************/
 .about{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     text-align: center;
 }
 .about h1{
@@ -492,7 +492,7 @@ i:hover {
 /*  */
 .color-box{
     position: fixed;
-    top: 150px;
+    top: 270px;
     left: 0;
     display: flex;
     z-index: 2;
@@ -509,7 +509,7 @@ i:hover {
 }
 .color-option li{
     background-color: teal;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
 }

@@ -506,6 +506,7 @@ i:hover {
     background-color: #fed136;
     height: fit-content;
     padding: 10px;
+    font-size: 25px;
 }
 .color-option li{
     background-color: teal;
